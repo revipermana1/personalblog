@@ -7,12 +7,15 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous" />
     <!-- My Css -->
     <link rel="stylesheet" href="style.css" />
-
+    <!--  -->
+    <!-- Bootstrap icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <!--  -->
     <title>Revi Blog's</title>
   </head>
-  <body>
+  <body id="home">
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary shadow-sm">
       <div class="container">
         <a class="navbar-brand" href="#">Revi Permana</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -21,16 +24,16 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active" aria-current="page" href="#home">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Projects</a>
+              <a class="nav-link" href="#projects">Projects</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact me!</a>
+              <a class="nav-link" href="#contact">Contact</a>
             </li>
           </ul>
         </div>
@@ -146,9 +149,33 @@
         <h2>Contact Me :)</h2>
       </div>
     </div>
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <form>
+          <div class="mb-3">
+            <label for="name" class="form-label">Nama Lengkap</label>
+            <input type="text" class="form-control" id="name" aria-describedby="name">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" aria-describedby="email">
+          </div>
+          <div class="mb-3">
+            <label for="pesan" class="form-label">Pesan</label>
+            <textarea class="form-control" id="pesan" rows="3"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+    </div>
   </div>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0d6efd" fill-opacity="1" d="M0,192L60,186.7C120,181,240,171,360,170.7C480,171,600,181,720,202.7C840,224,960,256,1080,261.3C1200,267,1320,245,1380,234.7L1440,224L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
 </section>
     <!-- End of Contact -->
+
+    <!-- Footer -->
+  <footer class="bg-primary text-white text-center pb-5">
+    <p>Created with <i class="bi bi-emoji-smile text-warning"></i> by <a href="https://www.instagram.com/reviprmna/?hl=en" class="text-white fw-bold">Revi Permana</a></p>
+  </footer>
+    <!-- Footer -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
   </body>
 </html>
